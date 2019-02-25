@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/tv_and"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="14dp"
@@ -27,8 +27,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="380dp"
+        android:layout_height="536dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="72dp"
@@ -42,12 +42,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/tv_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text=" TOPPINGS"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/colorPrimaryDark" />
 
         <CheckBox
             android:id="@+id/checkBox3"
@@ -63,13 +64,13 @@
             android:text="     Chocolate" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/tv_quant"
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:gravity="center"
             android:text="Quantity"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/colorPrimaryDark" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -78,7 +79,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/buttonminus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -86,7 +87,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/tv_0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -95,7 +96,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/buttonplus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -104,16 +105,16 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/tv_order"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text=" Order Summary"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/colorPrimaryDark" />
 
         <Button
-            android:id="@+id/button15"
+            android:id="@+id/buttonorder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -123,27 +124,28 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/buttonreset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="95dp"
         android:layout_marginLeft="95dp"
         android:gravity="center"
         android:text="reset"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button10"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonempty"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/buttonempty"
         android:layout_width="82dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="61dp"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button9"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+        app:layout_constraintStart_toEndOf="@+id/buttonreset"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.538" />
 
 </android.support.constraint.ConstraintLayout>
