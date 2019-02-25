@@ -17,65 +17,69 @@
         android:layout_marginEnd="14dp"
         android:layout_marginRight="14dp"
         android:layout_marginBottom="8dp"
-        android:text="                Android"
+        android:gravity="center"
+        android:text=" Android"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="72dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="71dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:text="              TOPPINGS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" TOPPINGS"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="@color/colorAccent" />
 
         <CheckBox
             android:id="@+id/checkBox3"
-            android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:text="           Whipped Cream" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="    Whipped Cream" />
 
         <CheckBox
             android:id="@+id/checkBox4"
-            android:layout_width="match_parent"
-            android:layout_height="51dp"
-            android:text="             Chocolate" />
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="     Chocolate" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="68dp"
-            android:text="                Quantity"
+            android:gravity="center"
+            android:text="Quantity"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="@color/colorAccent" />
 
         <LinearLayout
-            android:layout_width="251dp"
-            android:layout_height="70dp"
-            android:gravity="center|right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/button13"
-                android:layout_width="106dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="-"
@@ -86,6 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="0"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -101,15 +106,17 @@
         <TextView
             android:id="@+id/textView13"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:text="         Order Summary"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" Order Summary"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="@color/colorAccent" />
 
         <Button
             android:id="@+id/button15"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Order"
             android:textColor="@color/colorAccent" />
 
@@ -119,22 +126,24 @@
         android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="93dp"
-        android:layout_marginLeft="93dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:gravity="center"
         android:text="reset"
         app:layout_constraintBaseline_toBaselineOf="@+id/button10"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button10"
-        android:layout_width="wrap_content"
+        android:layout_width="82dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="79dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="61dp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button9" />
+        app:layout_constraintStart_toEndOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
 </android.support.constraint.ConstraintLayout>
